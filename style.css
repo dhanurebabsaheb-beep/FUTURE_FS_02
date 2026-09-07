@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+.login {
+    width: 380px;
+    max-width: 90%;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login h1 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.login p {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.login input {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.login input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.login button {
+    width: 100%;
+    padding: 11px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.login button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard {
+    display: none;
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: white;
+    padding: 18px 22px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+header h1 {
+    color: #2563eb;
+    font-size: 25px;
+}
+
+header button {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background: #dc2626;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin: 22px 0;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.card p {
+    color: #2563eb;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   ADD BUTTON
+========================= */
+
+.add {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.add:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   ADD LEAD FORM
+========================= */
+
+.form {
+    display: none;
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    color: #2563eb;
+}
+
+
+/* Inputs */
+
+.form input,
+.form select,
+.form textarea {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+/* Label */
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+/* Notes */
+
+.form textarea {
+    height: 80px;
+    resize: none;
+}
+
+
+/* Form Buttons */
+
+.form button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 8px;
+    background: #2563eb;
+    color: white;
+}
+
+.form button:last-child {
+    background: #777;
+}
+
+.form button:hover {
+    opacity: 0.9;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search {
+    width: 100%;
+    padding: 11px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background: white;
+}
+
+.search:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   LEAD LIST
+========================= */
+
+.list {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.list h2 {
+    color: #2563eb;
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #2563eb;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+tr:hover {
+    background: #f8fafc;
+}
+
+
+/* =========================
+   DELETE BUTTON
+========================= */
+
+td button {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+td button:hover {
+    background: #dc2626;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .dashboard {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    header button {
+        width: 100%;
+    }
+
+    .form {
+        padding: 20px;
+    }
+
+    .list {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+}

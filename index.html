@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LeadFlow CRM</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- LOGIN -->
+
+    <div class="login" id="login">
+
+        <h1>LeadFlow CRM</h1>
+
+        <p>Admin Login</p>
+
+        <input type="email" id="loginEmail" placeholder="Email">
+
+        <input type="password" id="loginPassword" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+    </div>
+
+
+    <!-- DASHBOARD -->
+
+    <div class="dashboard" id="dashboard">
+
+        <header>
+
+            <h1>LeadFlow CRM</h1>
+
+            <button onclick="logout()">Logout</button>
+
+        </header>
+
+
+        <!-- CARDS -->
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Leads</h3>
+                <p id="total">0</p>
+            </div>
+
+            <div class="card">
+                <h3>New</h3>
+                <p id="new">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Contacted</h3>
+                <p id="contacted">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Converted</h3>
+                <p id="converted">0</p>
+            </div>
+
+        </div>
+
+
+        <!-- ADD LEAD -->
+
+        <button class="add" onclick="showForm()">
+            + Add Lead
+        </button>
+
+
+        <div class="form" id="form">
+
+            <h2>Add New Lead</h2>
+
+            <input type="text" id="name" placeholder="Name">
+
+            <input type="email" id="email" placeholder="Email">
+
+            <input type="text" id="phone" placeholder="Phone">
+
+            <select id="source">
+
+                <option value="">Select Source</option>
+
+                <option value="Website">Website</option>
+
+                <option value="Instagram">Instagram</option>
+
+                <option value="Facebook">Facebook</option>
+
+                <option value="LinkedIn">LinkedIn</option>
+
+                <option value="Referral">Referral</option>
+
+            </select>
+
+
+            <select id="status">
+
+                <option value="New">New</option>
+
+                <option value="Contacted">Contacted</option>
+
+                <option value="Converted">Converted</option>
+
+            </select>
+
+
+            <label>Follow-up Date</label>
+
+            <input type="date" id="follow_up">
+
+
+            <textarea id="notes" placeholder="Notes"></textarea>
+
+
+            <button onclick="addLead()">Save Lead</button>
+
+            <button onclick="hideForm()">Cancel</button>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <input
+            type="text"
+            id="search"
+            class="search"
+            placeholder="Search lead..."
+            onkeyup="searchLead()"
+        >
+
+
+        <!-- LEAD LIST -->
+
+        <div class="list">
+
+            <h2>Lead List</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Name</th>
+
+                        <th>Email</th>
+
+                        <th>Source</th>
+
+                        <th>Status</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody id="leadList">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
