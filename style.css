@@ -11,9 +11,7 @@ body {
 }
 
 
-/* =========================
-   LOGIN
-========================= */
+/*LOGIN*/
 
 .login {
     width: 380px;
@@ -66,9 +64,7 @@ body {
 }
 
 
-/* =========================
-   DASHBOARD
-========================= */
+/*DASHBOARD*/
 
 .dashboard {
     display: none;
@@ -78,9 +74,7 @@ body {
 }
 
 
-/* =========================
-   HEADER
-========================= */
+/*HEADER*/
 
 header {
     background: white;
@@ -111,9 +105,7 @@ header button:hover {
 }
 
 
-/* =========================
-   CARDS
-========================= */
+/*CARDS*/
 
 .cards {
     display: grid;
@@ -143,9 +135,7 @@ header button:hover {
 }
 
 
-/* =========================
-   ADD BUTTON
-========================= */
+/*ADD BUTTON*/
 
 .add {
     background: #2563eb;
@@ -163,9 +153,7 @@ header button:hover {
 }
 
 
-/* =========================
-   ADD LEAD FORM
-========================= */
+/*ADD LEAD FORM*/
 
 .form {
     display: none;
@@ -241,9 +229,7 @@ header button:hover {
 }
 
 
-/* =========================
-   SEARCH
-========================= */
+/*SEARCH*/
 
 .search {
     width: 100%;
@@ -261,9 +247,7 @@ header button:hover {
 }
 
 
-/* =========================
-   LEAD LIST
-========================= */
+/*LEAD LIST*/
 
 .list {
     background: white;
@@ -278,9 +262,7 @@ header button:hover {
 }
 
 
-/* =========================
-   TABLE
-========================= */
+/*TABLE*/
 
 table {
     width: 100%;
@@ -306,9 +288,7 @@ tr:hover {
 }
 
 
-/* =========================
-   DELETE BUTTON
-========================= */
+/*DELETE BUTTON*/
 
 td button {
     background: #ef4444;
@@ -324,9 +304,7 @@ td button:hover {
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/*RESPONSIVE*/
 
 @media (max-width: 800px) {
 
